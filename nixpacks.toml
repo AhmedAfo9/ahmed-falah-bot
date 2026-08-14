@@ -1,5 +1,8 @@
+[phases.setup]
+nixPkgs = ["python312", "python312Packages.pip"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
 [start]
 cmd = "python ahmed_falah_ai_bot.py"
-
-[phases.setup]
-nixPkgs = ["python312"]
